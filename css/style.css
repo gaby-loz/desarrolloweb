@@ -1,0 +1,450 @@
+@charset "UTF-8";
+#grillaSeminario {
+  display: grid;
+  grid-template-areas: "contenido contenido contenido sidebar" "contenido contenido contenido sidebar" "contenido contenido contenido sidebar";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 110vh;
+  background-color: white;
+  color: black;
+  padding: 50px;
+  padding-bottom: 50px; }
+
+#grillaFilosofoMes {
+  display: grid;
+  grid-template-areas: "presentacionFilo presentacionFilo presentacionFilo sidebarFilo" "videoFilo videoFilo videoFilo sidebarFilo";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  padding: 50px; }
+
+/* Nombro cada Item */
+#cursoContenido {
+  grid-area: contenido; }
+
+#sidebarCurso, .sidebarFilosofo {
+  grid-area: sidebar; }
+
+.presenFilosofo, .videoEntrevista {
+  grid-area: presentacionFilo; }
+
+.videoEntrevista {
+  grid-area: videoFilo; }
+
+.sidebarFilosofo {
+  grid-area: sidebarFilo; }
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif; }
+  body p {
+    font-family: 'Poppins', sans-serif;
+    color: white; }
+  body header {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    padding-bottom: 20px; }
+
+.boton, .botonContraste {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #f2e709;
+  border-radius: 3px;
+  transition: all 0.3s; }
+
+.boton:hover, .botonContraste:hover {
+  background-color: #ee790c;
+  color: white;
+  transform: translate(5px, -20px);
+  padding: 20px 40px; }
+
+.botonContraste {
+  background-color: black;
+  color: white;
+  border: 0; }
+
+.logo {
+  width: 200px; }
+
+.navPropio {
+  margin: 0px;
+  padding: 10px; }
+
+.heroInicio, .heroInicio--sobreMi, .heroInicio--seminario, .heroInicio--emergente, .heroInicio--contacto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 20px;
+  background-image: url(img/buho-filosofía.jpg);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh; }
+  .heroInicio p, .heroInicio--sobreMi p, .heroInicio--seminario p, .heroInicio--emergente p, .heroInicio--contacto p {
+    width: 580px; }
+  .heroInicio h1, .heroInicio--sobreMi h1, .heroInicio--seminario h1, .heroInicio--emergente h1, .heroInicio--contacto h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 0; }
+
+.heroInicio--sobreMi {
+  background-image: url("../css/img/filosofo-daniel-sicerone-investigador-web.jpg");
+  background-position: center; }
+
+.heroInicio--seminario {
+  background-image: url("../css/img/curso-online-filosofia.jpg");
+  background-position: center; }
+
+.heroInicio--emergente {
+  background-image: url("../css/img/filosofia-hoy.jpg");
+  background-position: center; }
+
+.heroInicio--contacto {
+  background-image: url("../css/img/fondo-escritorio-negro.jpg");
+  background-position: center; }
+
+.contenedor {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch; }
+
+.contenedor__areaCajas, body header a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch; }
+  .contenedor__areaCajas div, body header a div {
+    padding: 40px;
+    background-color: #f2e709;
+    margin: 40px;
+    margin-top: 60px;
+    border-radius: 3px;
+    box-shadow: 60px -16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation-name: efecto_caja;
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-delay: 2s; }
+    .contenedor__areaCajas div h3, body header a div h3 {
+      color: black;
+      font-size: 1.4rem;
+      margin: auto;
+      text-align: center;
+      padding-bottom: 10px; }
+    .contenedor__areaCajas div p, body header a div p {
+      font-size: 1rem;
+      color: black;
+      font-weight: normal;
+      line-height: 25px;
+      text-align: center;
+      padding-bottom: 20px; }
+    .contenedor__areaCajas div a, body header a div a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      background-color: black;
+      border-radius: 3px;
+      transition: all 0.3s; }
+    .contenedor__areaCajas div a:hover, body header a div a:hover {
+      background-color: #ee790c;
+      padding: 20px 40px; }
+
+@keyframes efecto_caja {
+  0% {
+    width: 10%; }
+  25% {
+    width: 30%; }
+  50% {
+    width: 50%; }
+  75% {
+    width: 80%; }
+  100% {
+    width: 100%; } }
+
+.contenedor__presentacion {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0;
+  width: 95vw;
+  padding-right: 50px; }
+  .contenedor__presentacion h3 {
+    font-size: 2.5rem;
+    margin-top: 130px; }
+  .contenedor__presentacion p {
+    text-align: justify;
+    line-height: 25px;
+    padding-bottom: 20px; }
+  .contenedor__presentacion a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #f2e709;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all 0.3s; }
+  .contenedor__presentacion a:hover {
+    color: white;
+    background-color: #ee790c;
+    padding: 20px 40px; }
+
+.contenedor__meritos, .contenedor__cuadros {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 0 40px;
+  margin-bottom: 50px; }
+  .contenedor__meritos div, .contenedor__cuadros div {
+    padding: 15px;
+    border: solid 1px #f2e709;
+    margin: 20px; }
+    .contenedor__meritos div p, .contenedor__cuadros div p {
+      font-size: 15px;
+      text-align: center; }
+    .contenedor__meritos div h3, .contenedor__cuadros div h3 {
+      text-align: center;
+      font-size: 1.5rem; }
+
+.cursos {
+  padding: 100px 100px 50px 20px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-image: url("../css/img/fondo-escritorio-negro.jpg");
+  background-position: center;
+  background-size: cover; }
+  .cursos div {
+    padding: 0px 50px; }
+    .cursos div h3 {
+      font-size: 2.4rem;
+      font-weight: bold; }
+    .cursos div h4 {
+      letter-spacing: 7px;
+      font-weight: 700;
+      padding-bottom: 10px; }
+    .cursos div hr {
+      width: 25%;
+      height: 1px;
+      margin-left: 0%;
+      margin-right: 50%;
+      background-color: #f2e709; }
+    .cursos div p {
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding-bottom: 20px; }
+    .cursos div a {
+      text-decoration: none;
+      color: black;
+      padding: 10px 20px;
+      text-align: center;
+      background-color: #f2e709;
+      border-radius: 3px;
+      font-weight: bold;
+      transition: all 0.3s; }
+    .cursos div a:hover {
+      color: white;
+      background-color: #ee790c;
+      padding: 20px 40px; }
+
+.curso__newsletter {
+  padding: 20px 0px;
+  text-align: left;
+  margin-top: 30px;
+  margin-right: 120px; }
+  .curso__newsletter h5 {
+    font-size: 2rem;
+    font-weight: bold; }
+
+.botonForm {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  padding: 10px 40px;
+  text-align: center;
+  background-color: #f2e709;
+  border-radius: 3px;
+  font-weight: bold;
+  border: 0;
+  transition: all 0.3s; }
+
+.botonForm:hover {
+  color: white;
+  font-weight: bold;
+  background-color: #ee790c;
+  padding: 20px 40px; }
+
+.formulario {
+  padding: 50px 20px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center; }
+  .formulario h5 {
+    font-size: 2.5rem;
+    font-weight: 700; }
+  .formulario h6 {
+    font-size: 1.3rem;
+    font-weight: bold; }
+
+.parrafoUnico {
+  margin: auto;
+  text-align: center;
+  padding: 50px 50px; }
+  .parrafoUnico h2 {
+    padding: 50px;
+    font-size: 3rem; }
+
+.contenedor__centrado {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 50px; }
+  .contenedor__centrado img {
+    width: 500px;
+    height: auto; }
+
+.contenedor__centrado--texto p {
+  padding-left: 50px;
+  padding-top: 50px; }
+
+.contenedor__cuadros {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  justify-content: stretch;
+  align-items: center; }
+  .contenedor__cuadros div {
+    padding: 30px 15px 0px;
+    margin: 0;
+    margin-right: 15px;
+    margin-bottom: 25px; }
+    .contenedor__cuadros div h3 {
+      font-size: 1.5rem; }
+
+#cursoContenido {
+  padding-bottom: 50px;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: solid 1px gray; }
+  #cursoContenido div {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    #cursoContenido div h3 {
+      font-size: 1.5rem;
+      padding-bottom: 20px; }
+    #cursoContenido div p {
+      color: black; }
+
+#sidebarCurso, .sidebarFilosofo {
+  padding: 0px 30px 50px 10px; }
+  #sidebarCurso h3, .sidebarFilosofo h3 {
+    font-size: 1rem;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  #sidebarCurso ol, .sidebarFilosofo ol {
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; }
+
+.paddingBottom {
+  padding-bottom: 50px; }
+
+#newsletterSemi {
+  background-color: #f2e709;
+  padding: 50px 50px;
+  text-align: center;
+  margin: 100px;
+  border-radius: 3px; }
+  #newsletterSemi h4 {
+    font-size: 2.5rem;
+    color: #ee790c; }
+  #newsletterSemi p {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold; }
+  #newsletterSemi form input {
+    font-size: 14px;
+    padding: 10px 40px;
+    margin-bottom: 5px; }
+
+.socialMedia {
+  padding-top: 20px; }
+  .socialMedia i {
+    padding: 30px;
+    margin: 10px; }
+
+.socialMedia:hover i {
+  background-color: white;
+  border-radius: 3px;
+  color: black; }
+
+.card--propio {
+  background-color: #f2e709;
+  padding: 0;
+  color: black;
+  border: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 100%; }
+  .card--propio p {
+    color: black;
+    font-family: 'Poppins', sans-serif; }
+
+.card-title--propio {
+  font-family: 'Montserrat', sans-serif; }
+
+.presenFilosofo, .videoEntrevista {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px; }
+  .presenFilosofo div h3, .videoEntrevista div h3 {
+    font-size: 2.5rem;
+    padding-bottom: 20px; }
+  .presenFilosofo div h4, .videoEntrevista div h4 {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .presenFilosofo div p, .videoEntrevista div p {
+    color: black; }
+
+.videoEntrevista div h3 {
+  font-size: 2rem; }
+
+.sidebarFilosofo {
+  border-left: solid 1px gray;
+  padding-left: 20px; }
+  .sidebarFilosofo p {
+    color: black;
+    padding-bottom: 30px; }
+  .sidebarFilosofo ul {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif; }
+    .sidebarFilosofo ul li {
+      list-style: none;
+      text-align: left; }
+      .sidebarFilosofo ul li a {
+        text-decoration: none; }

@@ -1,0 +1,51 @@
+#grillaSeminario{
+    display: grid;
+    grid-template-areas: 
+    "contenido contenido contenido sidebar"
+    "contenido contenido contenido sidebar"
+    "contenido contenido contenido sidebar"
+    ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 110vh;
+    background-color: white;
+    color: black;
+    padding: 50px;
+    padding-bottom: 50px;
+}
+
+#grillaFilosofoMes{
+    display: grid;
+    grid-template-areas: 
+    "presentacionFilo presentacionFilo presentacionFilo sidebarFilo"
+    "videoFilo videoFilo videoFilo sidebarFilo"
+    ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    background-color: white;
+    color:black;
+    padding: 50px;
+}
+
+/* Nombro cada Item */
+#cursoContenido {
+    grid-area: contenido;
+}
+
+#sidebarCurso {
+    grid-area: sidebar;
+}
+
+.presenFilosofo {
+    grid-area: presentacionFilo;
+}
+
+.videoEntrevista {
+    grid-area: videoFilo;
+}
+
+.sidebarFilosofo {
+    grid-area: sidebarFilo;
+}
+

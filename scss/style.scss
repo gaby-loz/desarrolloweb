@@ -1,0 +1,544 @@
+@import "grid";
+
+$fondo: black;
+
+$amarillo:#f2e709;
+$naranja:rgb(238, 121, 12);
+
+
+body {
+    background-color: $fondo;
+    color:white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    p{
+        font-family: 'Poppins', sans-serif;
+        @if $fondo== black{
+            color:white;
+        }
+        @else if $fondo== white{
+            color:black;
+        }
+    }
+    header{
+        background-color: $fondo;
+        display:flex;
+        justify-content: space-around;
+        padding: 10px;
+        padding-bottom: 20px;
+        a{
+            @extend .contenedor__areaCajas;
+        }
+    
+    }
+}
+
+.boton{
+    text-decoration: none;
+    color:$fondo;
+    padding: 10px 20px;
+    text-align: center;
+    background-color:$amarillo;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.boton:hover{
+    background-color:$naranja;
+    color: white;
+    transform: translate(5px, -20px);
+    padding: 20px 40px;
+}
+
+.botonContraste{
+    @extend .boton;
+    background-color: $fondo;
+    color: white;
+    border:0;
+}
+
+.logo{
+    width: 200px;
+}
+
+.navPropio {
+    margin: 0px;
+    padding:10px;
+}
+
+.heroInicio {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    align-items:center;
+    padding-left: 50px;
+    padding-right: 20px;
+    background-image:url(img/buho-filosofía.jpg);
+    background-position:left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;  
+    p{
+        width: 580px;
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+}
+
+.heroInicio--sobreMi {
+    @extend .heroInicio;
+    background-image: url("../css/img/filosofo-daniel-sicerone-investigador-web.jpg");
+    background-position: center;
+}
+
+.heroInicio--seminario {
+    @extend .heroInicio;
+    background-image: url("../css/img/curso-online-filosofia.jpg");
+    background-position: center;
+}
+
+.heroInicio--emergente{
+    @extend .heroInicio;
+    background-image: url("../css/img/filosofia-hoy.jpg");
+    background-position: center;
+}
+
+.heroInicio--contacto{
+    @extend .heroInicio;
+    background-image: url("../css/img/fondo-escritorio-negro.jpg");
+    background-position: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    
+    
+    
+}
+.contenedor__areaCajas{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items:stretch;
+    div{
+        padding: 40px;
+        background-color:$amarillo;
+        margin: 40px;
+        margin-top: 60px;
+        border-radius: 3px;
+        box-shadow: 60px -16px rgba(0,0,0,0.2);
+        text-align: center;
+        animation-name: efecto_caja;
+        animation-iteration-count:2;
+        animation-timing-function:ease;
+        animation-duration: 5s;
+        animation-delay: 2s;
+
+
+
+        h3{
+            color: black;
+            font-size: 1.4rem;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        p{
+            font-size: 1rem;
+            color: black;
+            font-weight: normal;
+            line-height: 25px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+       a{
+           text-decoration: none;
+           color: white;
+           padding: 10px 20px;
+           text-align: center;
+           background-color:black;
+           border-radius: 3px;
+           transition: all 0.3s;
+        }
+        a:hover {
+            background-color:$naranja;
+            padding: 20px 40px;  
+        }    
+    }
+}
+
+
+@keyframes efecto_caja{
+    0%{ width: 10%; }
+   25%{ width: 30%; }
+   50%{ width: 50%; }
+   75%{ width: 80%; }
+   100%{ width: 100%;}
+
+}
+
+.contenedor__presentacion {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0;
+    width: 95vw;
+    padding-right: 50px;
+    h3{
+        font-size: 2.5rem;
+        margin-top: 130px;
+    }
+    p{
+        text-align: justify;
+        line-height: 25px;
+        padding-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        background-color:$amarillo;
+        border-radius: 3px;
+        font-weight: bold;
+        transition: all 0.3s;
+    }
+    a:hover{
+        color:white;
+        background-color: $naranja;
+        padding: 20px 40px; 
+        
+    }
+}
+
+.contenedor__meritos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items:stretch;
+    padding: 0 40px;
+    margin-bottom: 50px;
+    div{
+        padding: 15px;
+        border: solid 1px $amarillo;
+        margin: 20px;
+        p{
+            font-size: 15px;
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
+.cursos {
+    padding: 100px 100px 50px 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-around;
+    align-items: flex-start;
+    background-image: url("../css/img/fondo-escritorio-negro.jpg");
+    background-position:center;
+    background-size: cover;
+    div{
+        padding: 0px 50px;
+        h3{
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+        h4{
+            letter-spacing: 7px;
+            font-weight: 700;
+            padding-bottom: 10px;
+        }
+        hr{
+            width: 25%;
+            height: 1px;
+            margin-left: 0%;
+            margin-right: 50%;
+            background-color:$amarillo;
+        }
+        p{
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: $fondo;
+            padding: 10px 20px;
+            text-align: center;
+            background-color:$amarillo;
+            border-radius: 3px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        a:hover{
+            color:white;
+            background-color: $naranja;
+            padding: 20px 40px;
+        }
+    }
+}
+
+.curso__newsletter {
+    padding: 20px 0px;
+    text-align:left;
+    margin-top: 30px;
+    margin-right: 120px;
+    h5{
+        font-size: 2rem;
+        font-weight: bold;
+        
+    }
+}
+
+.botonForm {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: $fondo;
+    padding: 10px 40px;
+    text-align: center;
+    background-color:$amarillo;
+    border-radius: 3px;
+    font-weight: bold;
+    border: 0;
+    transition: all 0.3s;
+}
+
+.botonForm:hover {
+    color:white;
+    font-weight: bold;
+    background-color:$naranja;
+    padding: 20px 40px;
+}
+
+.formulario{
+    padding: 50px 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-around;
+    align-items: center;
+    h5{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    h6{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}
+
+.parrafoUnico {
+    margin: auto;
+    text-align: center;
+    padding: 50px 50px;
+    h2{
+        padding: 50px;
+        font-size: 3rem;
+
+    }
+}
+
+.contenedor__centrado {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items:center;
+    justify-content: space-around;
+    padding: 20px 50px;
+    img{
+        width: 500px;
+        height: auto;
+    }
+}
+
+.contenedor__centrado--texto {
+    p{
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+}
+
+.contenedor__cuadros{
+    @extend .contenedor__meritos;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    justify-content:stretch;
+    align-items: center;
+    div{
+        padding: 30px 15px 0px;
+        margin: 0;
+        margin-right: 15px;
+        margin-bottom: 25px;
+        h3{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+#cursoContenido{
+    padding-bottom: 50px;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: solid 1px gray;
+    div{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        h3{
+            font-size: 1.5rem; 
+            padding-bottom: 20px;
+        }
+        
+        p{
+            color: $fondo;
+        }
+    }
+}
+
+#sidebarCurso {
+    padding: 0px 30px 50px 10px;
+    h3{
+        font-size: 1rem;
+        padding-top: 20px;
+        padding-bottom: 20px;    
+    }
+    ol{
+        font-size: 0.8rem;
+        font-family:'Poppins', sans-serif;
+        text-decoration: none;
+    }
+}
+
+.paddingBottom{
+    padding-bottom: 50px;
+}
+
+#newsletterSemi{
+    background-color: #f2e709;
+    padding: 50px 50px;
+    text-align: center;
+    margin:100px ;
+    border-radius: 3px;
+    h4{
+        font-size: 2.5rem;
+        color:rgb(238, 121, 12);
+    }
+    p{
+        color:$fondo;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    form{
+        input{
+            font-size: 14px;
+            padding:10px 40px;
+            margin-bottom: 5px;
+        }
+
+    }
+}
+
+.socialMedia {
+    padding-top: 20px;
+    i{
+        padding: 30px;
+        margin: 10px;
+
+    }
+}
+
+.socialMedia:hover{
+    i{
+        background-color: white;
+        border-radius: 3px;
+        color: black;
+    }
+}
+
+.card--propio{
+    background-color: $amarillo;
+    padding: 0;
+    color:black;
+    border:0;
+    display: flex;
+    align-items: stretch;
+    justify-content:space-between;
+    height: 100%;
+    p{
+        color: black;
+        font-family:'Poppins', sans-serif ;
+    }
+   
+}
+
+.card-title--propio{
+    font-family:'Montserrat', sans-serif;
+}
+
+.presenFilosofo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    div{
+        
+        h3{
+            font-size: 2.5rem; 
+            padding-bottom: 20px;
+        }
+        h4{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        p{
+            color: black;
+        }
+    }
+}
+
+.videoEntrevista{
+    @extend .presenFilosofo;
+    div{
+        h3{
+            font-size: 2rem;
+        }
+    }
+}
+
+.sidebarFilosofo{
+    @extend #sidebarCurso ;
+    border-left: solid 1px gray;
+    padding-left: 20px;
+    p{
+        color: black;
+        padding-bottom: 30px;
+    }
+    ul{
+        font-size: 1rem;
+        font-family:'Poppins', sans-serif;
+        li {
+            list-style: none;
+            text-align: left;
+            a{
+                text-decoration: none;
+            }          
+        }    
+    }
+}

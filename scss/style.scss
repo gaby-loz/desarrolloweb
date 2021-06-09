@@ -116,6 +116,18 @@ body {
     background-position: center;
 }
 
+.heroInicio--diferencia {
+    @extend .heroInicio;
+    background-image: url("../css/img/acropolis-griega.jpg");
+    background-position: center;
+}
+
+.heroInicio--diferenciaSexual {
+    @extend .heroInicio;
+    background-image: url("../css/img/mujer-filosofía-portada.jpg");
+    background-position: center;
+}
+
 .contenedor {
     display: flex;
     flex-flow: row nowrap;
@@ -541,4 +553,37 @@ body {
             }          
         }    
     }
+}
+
+.sidebarBlog{
+    background: rgb(0,0,0);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(238,121,12,1) 100%);
+    padding: 50px 20px;
+    border-radius: 10px;
+    h5{
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+
+    ul{
+        text-align: left;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 0.8rem;
+                font-weight: normal;
+            }
+            a:hover{
+                color:black;
+            }
+        }
+    }
+    
+
+
 }

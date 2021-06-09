@@ -28,6 +28,18 @@
     padding: 50px;
 }
 
+.grillaBlog{
+    display: grid;
+    grid-template-areas: 
+    "cuerpoblog cuerpoblog cuerpoblog sidebarBlog"
+    "cuerpoblog cuerpoblog cuerpoblog sidebarBlog"
+    ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    padding: 50px;
+}
+
 /* Nombro cada Item */
 #cursoContenido {
     grid-area: contenido;
@@ -49,3 +61,10 @@
     grid-area: sidebarFilo;
 }
 
+.cuerpoBlog {
+    grid-area: cuerpoblog;
+}
+
+.sidebarBlog {
+    grid-area: sidebarBlog;
+}

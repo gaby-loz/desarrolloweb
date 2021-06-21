@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@100;200;400&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     </head>
 
 <body>
@@ -61,7 +63,7 @@
 <!--banner de sobre mi-->
 <section class="heroInicio heroInicio--sobreMi">
     <div>
-        <h1>
+        <h1 data-aos="slide-down" data-aos-offset="200">
             MSc. Daniel Sicerone
         </h1>
         <p>Licenciado en Filosofía, con una Maestría en Filosofía; en la actualidad curso estudios doctorales en filosofía en la Facultad de Filosofía y Letras de la Universidad de Buenos Aires, con el financiamiento de una Beca Doctoral del CONICET.</p>
@@ -74,12 +76,12 @@
         <section class="parrafoUnico">
             <div>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent, netus elementum tortor platea faucibus pulvinar eget, euismod nisl rutrum lacinia magnis luctus leo. Pharetra netus purus ac egestas massa ligula magna semper, cras quam interdum velit tortor elementum volutpat, mauris donec eros potenti fringilla inceptos lectus. Integer non tellus auctor velit accumsan proin commodo mollis, montes a eget suspendisse habitasse phasellus enim nullam, suscipit per erat lacus dignissim feugiat natoque. Malesuada consequat cubilia lectus dui nascetur class lacus laoreet, posuere rhoncus eros eget fusce orci conubia nostra porttitor, sagittis cras facilisi duis scelerisque pulvinar ac.</p>
+                <p>Hola, en esta sección quiero contarte un poco más sobre mí, especificamente hablarte sobre mi formación académica y la orientación de mi trabajo. La intensión es que nos conozcámos un poco mejor y nos reconozcámos como compañeros del basto quehacer de la filosofía. </p>
             </div>
         </section>
 
         <Section class="contenedor">
-            <div class="contenedor__meritos">
+            <div class="contenedor__meritos" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
                 <div>
                     <h3>Publicaciones</h3>
                     <p>Más de 40 publicaciones científicas en Revistas Nacionales e Internacionales, destacándose las siguientes áreas: Filosoíía de la sexualidad, Género, Filosofía política, Materialismo especulativo y Psicoanálisis.</p>
@@ -98,39 +100,40 @@
 
         <section class="contenedor__centrado">
             <div>
-                <h2>Conozcámonos mejor</h2>
+                <h2 data-aos="slide-down" data-aos-offset="200" data-aos-duration="2000">Conozcámonos mejor</h2>
                 <p>Por motivos personales me mudé a la ciudad de Maracaibo en el 2008 y allí comencé mis estudios universitarios. Me gradué de Licenciado en Filosofía en el año 2013 en la Universidad Católica Cecilio Acosta (Maracaibo) con un promedio superior a nueve, obteniendo el reconocimiento Cum Laude.</p>
-                <p>Continué con mis estudios de posgrado, ingresando a la Maestría en Filosofía de la Universidad del Zulia (Maracaibo), finalizando mis estudios con una tesis con mención publicación. Siguiendo el interés inagotable de continuar mi formación, decidí en el año 2016 regresar a mi país para iniciar estudios doctorales en filosofía en la Facultad de Filosofía y Letras de la Universidad de Buenos Aires, con el financiamiento de una Beca Doctoral del CONICET.</p>
-                <p>Mi trabajo académico se ha desempeñado especialmente en el ámbito de la gestión educativa, la enseñanza de la filosofía y la investigación. Trabajé como Sub-Director Administrativo de una escuela de enseñanza media, ejercí como docente en universidades privadas y públicas, dictando las materias de Antropología Filosófica, Humanismo Cristiano, Lógica, Metodología de la Investigación, etc. Sin embargo, considero que nuestros tiempos actuales exigen que la formación en el ámbito de la filosofía no quede enclaustrada a las estructuras universitarias tradicionales, por lo que me dedico a impartir seminarios de filosofía político, género y sexualidad, psicoanálisis y ontología en institutos privados.</p>
-            </div>
-            <div>
-                <img src="css/img/daniel-sicerone.jpg" alt="filosofo-daniel-sicerone">
-            </div>
-            
+                <p>Continué con mis estudios de posgrado, ingresando a la Maestría en Filosofía de la Universidad del Zulia (Maracaibo), finalizando mis estudios con una tesis con mención publicación. Siguiendo el interés inagotable de continuar mi formación, decidí en el año 2016 regresar a mi país para iniciar estudios doctorales en filosofía en la Facultad de Filosofía y Letras de la Universidad de Buenos Aires, con el financiamiento de una Beca Doctoral del CONICET. Mi trabajo académico se ha desempeñado especialmente en el ámbito de la gestión educativa, la enseñanza de la filosofía y la investigación. Trabajé como Sub-Director Administrativo de una escuela de enseñanza media, ejercí como docente en universidades privadas y públicas, dictando las materias de Antropología Filosófica, Humanismo Cristiano, Lógica, Metodología de la Investigación, etc. </p>
+            </div>     
         </section>
+        
+        <div class="contenedor__centrado">
+            <img class="contenedor__meritos" data-aos="fade-right" data-aos-offset="200" data-aos-duration="2000" src="css/img/daniel-sicerone.jpg" alt="filosofo-daniel-sicerone">
+            <img class="contenedor__meritos" data-aos="fade-left" data-aos-offset="200" data-aos-duration="2000" src="css/img/filosofia-libros.jpg" alt="libros-antiguos">
+        </div>
 
         
-        <section class="contenedor__centrado contenedor__centrado--texto">
+        <section class="contenedor__centrado">
             <div>
-                <img src="css/img/filosofia-libros.jpg" alt="libros-antiguos">
+                
             </div>
             <div>
+                <p>Por otro lado, considero que nuestros tiempos actuales exigen que la formación en el ámbito de la filosofía no quede enclaustrada a las estructuras universitarias tradicionales, por lo que me dedico a impartir seminarios de filosofía político, género y sexualidad, psicoanálisis y ontología en institutos privados.</p>
                 <p>Mis intereses de estudio están orientados hacia la filosofía contemporánea, especialmente a interactuar dialógicamente entre un enfoque centrado en los llamados nuevos realismos o materialismos especulativos y las teorías filosóficas sobre la sexualidad y la diferencia sexual propiciadas por la Escuela de Liubliana (Žižek, Copjec, Zupančič, Dolar, entre otros). Considero pertinente abordar los problemas contemporáneos de la subjetividad recuperando la filosofía materialista y especulativa como marco teórico para comprender el carácter reflexivo y medial de la diferencia. Por ello, mi interés también versa sobre los principales exponentes del Idealismo Alemán y la posibilidad de la reactualización de dicha filosofía para afrontar los problemáticos tiempos en los que vivimos, donde reina la fragmentación y la intolerancia hacia las diferencias.</p>
             </div>
                        
         </section>
 
         <!--promoción del curso del mes-->
-        <section class="cursos">
+        <section class="cursos" data-aos="slide-left" data-aos-offset="200" data-aos-duration="1000" data-aos-once="true">
             <div>
-                <h4>CURSO DEL MES</h4>
+                <h4 data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="500">CURSO DEL MES</h4>
                 <hr>
-                <h3>"La Escuela de Luibliana y la Diferencia Sexual"</h2>
-                <h4>En torno a Žiẑek, Zupančič y Copjec</h3>
-                <p>Este curso tiene como propósito introducir a los participantes en el tratamiento que la Escuela de Liubliana le otorga a la diferencia sexual, especialmente a partir de la mediación entre los conceptos psicoanalíticos de la sexualidad y una particular filosofía centrada en la recuperación del pensamiento del idealismo alemán.</p>
+                <h3 data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="500">"La Escuela de Luibliana y la Diferencia Sexual"</h2>
+                <h4 data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="500">En torno a Žiẑek, Zupančič y Copjec</h3>
+                <p data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="500">Este curso tiene como propósito introducir a los participantes en el tratamiento que la Escuela de Liubliana le otorga a la diferencia sexual, especialmente a partir de la mediación entre los conceptos psicoanalíticos de la sexualidad y una particular filosofía centrada en la recuperación del pensamiento del idealismo alemán.</p>
             </div>
 
-            <div class="contenedor__cuadros">
+            <div class="contenedor__cuadros" data-aos="fade-in" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1000">
                 <div>
                     <h3>Inicio</h3>
                     <p>15/10/2021</p>
@@ -157,9 +160,9 @@
             </div>
 
             <div class="curso__newsletter" >
-                <h5>Optén 25% de descuesto en todos los cursos</h2>
-                <p><span>Suscríbete a la Newsletter</span> para disfrutar de beneficios y contenido actualizado en el ámbito académico</p>
-                <form>
+                <h5 data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="300">Optén 25% de descuesto en todos los cursos</h5>
+                <p data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="300"><span>Suscríbete a la Newsletter</span> para disfrutar de beneficios y contenido actualizado en el ámbito académico</p>
+                <form data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="300">
                     <input type="text" name="nombre" placeholder="Nombre" class="form-label"><br>
                     <input type="email" name="email" placeholder="Email" class="form-label"><br>
                     <input class="botonForm" type="submit" value="Enviar">
@@ -168,7 +171,7 @@
         </section>
 
         <!--footer-->
-       <footer class="formulario">
+       <footer class="formulario" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
            <div>
                <hr>
                <h5>¿Tienes dudas?</h5>
@@ -190,5 +193,8 @@
   
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>  
-
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
 </body>

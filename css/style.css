@@ -50,6 +50,9 @@
 .sidebarBlog {
   grid-area: sidebarBlog; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: black;
   color: white;
@@ -93,6 +96,12 @@ body {
 .navPropio {
   margin: 0px;
   padding: 10px; }
+
+.subTitulo {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 50px; }
 
 .heroInicio, .heroInicio--sobreMi, .heroInicio--seminario, .heroInicio--emergente, .heroInicio--contacto, .heroInicio--diferencia, .heroInicio--diferenciaSexual {
   display: flex;
@@ -157,12 +166,7 @@ body {
     margin-top: 60px;
     border-radius: 3px;
     box-shadow: 60px -16px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    animation-name: efecto_caja;
-    animation-iteration-count: 2;
-    animation-timing-function: ease;
-    animation-duration: 5s;
-    animation-delay: 2s; }
+    text-align: center; }
     .contenedor__areaCajas div h3, body header a div h3 {
       color: black;
       font-size: 1.4rem;
@@ -187,18 +191,6 @@ body {
     .contenedor__areaCajas div a:hover, body header a div a:hover {
       background-color: #ee790c;
       padding: 20px 40px; }
-
-@keyframes efecto_caja {
-  0% {
-    width: 10%; }
-  25% {
-    width: 30%; }
-  50% {
-    width: 50%; }
-  75% {
-    width: 80%; }
-  100% {
-    width: 100%; } }
 
 .contenedor__presentacion {
   display: flex;
@@ -341,17 +333,13 @@ body {
 
 .contenedor__centrado {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
   padding: 20px 50px; }
   .contenedor__centrado img {
     width: 500px;
     height: auto; }
-
-.contenedor__centrado--texto p {
-  padding-left: 50px;
-  padding-top: 50px; }
 
 .contenedor__cuadros {
   padding: 0;
@@ -424,6 +412,12 @@ body {
   border-radius: 3px;
   color: black; }
 
+.enlaceSlide {
+  color: white; }
+
+.enlaceSlide:hover {
+  color: #f2e709; }
+
 .card--propio {
   background-color: #f2e709;
   padding: 0;
@@ -492,3 +486,200 @@ body {
         font-weight: normal; }
       .sidebarBlog ul li a:hover {
         color: black; }
+
+@media screen and (max-width: 800px) {
+  .heroInicio, .heroInicio--sobreMi, .heroInicio--seminario, .heroInicio--emergente, .heroInicio--contacto, .heroInicio--diferencia, .heroInicio--diferenciaSexual {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    background-image: url("../css/img/buhoo-tablet.jpg");
+    background-position: left;
+    height: 80vh; }
+    .heroInicio p, .heroInicio--sobreMi p, .heroInicio--seminario p, .heroInicio--emergente p, .heroInicio--contacto p, .heroInicio--diferencia p, .heroInicio--diferenciaSexual p {
+      width: 500px; }
+  .heroInicio--sobreMi {
+    background-image: url("../css/img/filosofo-daniel-sicerone-investigador-tablet.jpg");
+    background-position: center;
+    padding-left: 80px; }
+  .contenedor__areaCajas, body header a {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch; }
+    .contenedor__areaCajas div, body header a div {
+      padding: 40px;
+      background-color: #f2e709;
+      margin: 40px;
+      margin-top: 60px;
+      border-radius: 3px;
+      box-shadow: 60px -16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      animation-name: efecto_caja;
+      animation-iteration-count: 2;
+      animation-timing-function: ease;
+      animation-duration: 5s;
+      animation-delay: 2s; }
+  .contenedor__presentacion {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding-right: 30px; }
+    .contenedor__presentacion img {
+      margin: 0;
+      width: 500px;
+      height: auto; }
+    .contenedor__presentacion h3 {
+      font-size: 2.5rem;
+      padding-left: 30px;
+      margin-top: 0; }
+    .contenedor__presentacion p {
+      text-align: justify;
+      line-height: 25px;
+      padding-bottom: 20px;
+      padding-left: 30px; }
+    .contenedor__presentacion a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: black;
+      padding: 10px 20px;
+      text-align: center;
+      background-color: #f2e709;
+      border-radius: 3px;
+      font-weight: bold;
+      transition: all 0.3s; }
+    .contenedor__presentacion a:hover {
+      color: white;
+      background-color: #ee790c;
+      padding: 20px 40px; }
+  .contenedor__meritos, .contenedor__cuadros {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 50px;
+    margin: 0;
+    margin-top: 20px; }
+    .contenedor__meritos div, .contenedor__cuadros div {
+      padding: 15px;
+      border: solid 1px #f2e709; }
+      .contenedor__meritos div p, .contenedor__cuadros div p {
+        font-size: 15px;
+        text-align: center; }
+      .contenedor__meritos div h3, .contenedor__cuadros div h3 {
+        text-align: center;
+        font-size: 1.5rem; }
+  p {
+    font-size: 1.1rem; }
+  .contenedor__centrado p {
+    font-size: 1.1rem;
+    margin-top: 20px; }
+  .contenedor__cuadros div {
+    padding: 30px; }
+    .contenedor__cuadros div h3 {
+      font-size: 1.2rem; }
+  .cursos {
+    padding: 30px 20px 50px 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-image: url("../css/img/fondo-escritorio-negro.jpg");
+    background-position: right;
+    background-size: cover; }
+    .cursos div {
+      padding: 0px 50px; }
+      .cursos div h3 {
+        font-size: 2.4rem;
+        font-weight: bold; }
+      .cursos div h4 {
+        letter-spacing: 7px;
+        font-weight: 700;
+        padding-bottom: 10px; }
+      .cursos div hr {
+        width: 25%;
+        height: 1px;
+        margin-left: 0%;
+        margin-right: 50%;
+        background-color: #f2e709; }
+      .cursos div p {
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding-bottom: 20px; }
+      .cursos div a {
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        background-color: #f2e709;
+        border-radius: 3px;
+        font-weight: bold;
+        transition: all 0.3s; }
+      .cursos div a:hover {
+        color: white;
+        background-color: #ee790c;
+        padding: 20px 40px; } }
+
+@media screen and (max-width: 480px) {
+  .heroInicio, .heroInicio--sobreMi, .heroInicio--seminario, .heroInicio--emergente, .heroInicio--contacto, .heroInicio--diferencia, .heroInicio--diferenciaSexual {
+    flex-flow: column wrap;
+    justify-content: space-around;
+    background-image: url("../css/img/buhoo-movil-2.jpg");
+    height: 80vh; }
+    .heroInicio p, .heroInicio--sobreMi p, .heroInicio--seminario p, .heroInicio--emergente p, .heroInicio--contacto p, .heroInicio--diferencia p, .heroInicio--diferenciaSexual p {
+      max-width: 400px; }
+    .heroInicio h1, .heroInicio--sobreMi h1, .heroInicio--seminario h1, .heroInicio--emergente h1, .heroInicio--contacto h1, .heroInicio--diferencia h1, .heroInicio--diferenciaSexual h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 80px;
+      margin-bottom: 0; }
+  .heroInicio--sobreMi {
+    background-image: url("../css/img/filosofo-daniel-sicerone-investigador-movil-.jpg");
+    background-position: center;
+    padding-left: 30px;
+    padding-top: 120px; }
+  .cursos {
+    padding: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-image: url("../css/img/fondo-escritorio-negro.jpg");
+    background-position: right;
+    background-size: cover; }
+    .cursos div {
+      padding: 0px; }
+      .cursos div h3 {
+        font-size: 2rem;
+        font-weight: bold; }
+      .cursos div h4 {
+        letter-spacing: 7px;
+        font-weight: 700;
+        padding-bottom: 10px; }
+      .cursos div p {
+        font-size: 1rem;
+        font-weight: 500;
+        padding-bottom: 20px; }
+      .cursos div a {
+        margin-bottom: 40px; }
+  .curso__newsletter {
+    margin-right: 30px; }
+    .curso__newsletter h5 {
+      font-size: 1.8rem;
+      margin-top: 30px;
+      font-weight: bold; }
+  .contenedor__cuadros div {
+    padding: 30px; }
+    .contenedor__cuadros div h3 {
+      font-size: 1.5rem; }
+  .subTitulo {
+    font-size: 2rem;
+    margin-top: 50px;
+    text-align: left;
+    padding-left: 30px; }
+  .formulario h5 {
+    font-size: 2rem; }
+  .formulario h6 {
+    font-size: 1.2rem; } }

@@ -654,7 +654,7 @@ body {
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: flex-start;
-    background-image: url("../css/img/fondo-escritorio-negro.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../css/img/fondo-escritorio-negro.jpg");
     background-position: right;
     background-size: cover; }
     .cursos div {

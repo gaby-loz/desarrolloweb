@@ -765,9 +765,7 @@ body {
 }
 
 @media screen and (max-width:480px){
-    .navPropio {
-        padding:0px;
-    }
+    
     .logo{
         width: 150px;
     }
@@ -775,7 +773,7 @@ body {
         flex-flow: column wrap;
         justify-content: space-around;
         background-image: url("../css/img/buhoo-movil-2.jpg");
-        background-attachment:local;
+        background-attachment:scroll;
         padding-left: 10px;
         height: 80vh;  
         p{

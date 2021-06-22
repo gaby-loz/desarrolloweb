@@ -622,15 +622,13 @@ body {
         padding: 20px 40px; } }
 
 @media screen and (max-width: 480px) {
-  .navPropio {
-    padding: 0px; }
   .logo {
     width: 150px; }
   .heroInicio, .heroInicio--sobreMi, .heroInicio--seminario, .heroInicio--emergente, .heroInicio--contacto, .heroInicio--diferencia, .heroInicio--diferenciaSexual {
     flex-flow: column wrap;
     justify-content: space-around;
     background-image: url("../css/img/buhoo-movil-2.jpg");
-    background-attachment: local;
+    background-attachment: scroll;
     padding-left: 10px;
     height: 80vh; }
     .heroInicio p, .heroInicio--sobreMi p, .heroInicio--seminario p, .heroInicio--emergente p, .heroInicio--contacto p, .heroInicio--diferencia p, .heroInicio--diferenciaSexual p {

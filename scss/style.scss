@@ -669,6 +669,11 @@ body {
         }
     }
 
+    .contenedor{
+        margin: 0;
+        justify-content: left;
+    }
+
     .contenedor__meritos {
         display: flex;
         flex-flow: row wrap;
@@ -834,6 +839,9 @@ body {
         }
     }
 
+    .contenedor__cuadros{
+        margin: 0;
+    }
     .curso__newsletter {
         margin-right: 30px;
         h5{
@@ -850,6 +858,13 @@ body {
             h3{
                 font-size: 1.5rem;
             }
+        }
+    }
+
+    .contenedor__centrado {
+        img{
+            width: 360px;
+            height: auto;
         }
     }
 

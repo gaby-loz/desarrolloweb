@@ -553,6 +553,9 @@ body {
       color: white;
       background-color: #ee790c;
       padding: 20px 40px; }
+  .contenedor {
+    margin: 0;
+    justify-content: left; }
   .contenedor__meritos, .contenedor__cuadros {
     display: flex;
     flex-flow: row wrap;
@@ -674,6 +677,8 @@ body {
         padding-bottom: 20px; }
       .cursos div a {
         margin-bottom: 40px; }
+  .contenedor__cuadros {
+    margin: 0; }
   .curso__newsletter {
     margin-right: 30px; }
     .curso__newsletter h5 {
@@ -684,6 +689,9 @@ body {
     padding: 30px; }
     .contenedor__cuadros div h3 {
       font-size: 1.5rem; }
+  .contenedor__centrado img {
+    width: 360px;
+    height: auto; }
   .subTitulo {
     font-size: 2rem;
     margin-top: 50px;

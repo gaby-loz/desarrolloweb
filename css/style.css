@@ -525,22 +525,22 @@ body {
     align-items: center;
     margin-top: 0px;
     margin-bottom: 0;
-    padding-right: 30px; }
+    padding-right: 10px; }
     .contenedor__presentacion img {
       margin: 0;
       width: 500px;
       height: auto; }
     .contenedor__presentacion h3 {
       font-size: 2.5rem;
-      padding-left: 30px;
+      padding-left: 10px;
       margin-top: 0; }
     .contenedor__presentacion p {
-      text-align: justify;
+      text-align: left;
       line-height: 25px;
       padding-bottom: 20px;
-      padding-left: 30px; }
+      padding-left: 10px; }
     .contenedor__presentacion a {
-      margin-left: 30px;
+      margin-left: 10px;
       text-decoration: none;
       color: black;
       padding: 10px 20px;
@@ -572,15 +572,19 @@ body {
         font-size: 1.5rem; }
   p {
     font-size: 1.1rem; }
-  .contenedor__centrado p {
-    font-size: 1.1rem;
-    margin-top: 20px; }
+  .contenedor__centrado {
+    padding: 20px; }
+    .contenedor__centrado p {
+      font-size: 1.1rem;
+      margin-top: 20px; }
+    .contenedor__centrado h2 {
+      margin-top: 30px; }
   .contenedor__cuadros div {
     padding: 30px; }
     .contenedor__cuadros div h3 {
       font-size: 1.2rem; }
   .cursos {
-    padding: 30px 20px 50px 20px;
+    padding: 30px 0px 50px 0px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -589,7 +593,7 @@ body {
     background-position: right;
     background-size: cover; }
     .cursos div {
-      padding: 0px 50px; }
+      padding: 0px 10px; }
       .cursos div h3 {
         font-size: 2.4rem;
         font-weight: bold; }
@@ -628,11 +632,11 @@ body {
     flex-flow: column wrap;
     justify-content: space-around;
     background-image: url("../css/img/buhoo-movil-2.jpg");
-    background-attachment: scroll;
+    background-attachment: unset;
     padding-left: 10px;
-    height: 80vh; }
+    height: 60vh; }
     .heroInicio p, .heroInicio--sobreMi p, .heroInicio--seminario p, .heroInicio--emergente p, .heroInicio--contacto p, .heroInicio--diferencia p, .heroInicio--diferenciaSexual p {
-      max-width: 320px; }
+      max-width: 350px; }
     .heroInicio h1, .heroInicio--sobreMi h1, .heroInicio--seminario h1, .heroInicio--emergente h1, .heroInicio--contacto h1, .heroInicio--diferencia h1, .heroInicio--diferenciaSexual h1 {
       font-size: 2rem;
       font-weight: bold;
@@ -681,8 +685,7 @@ body {
   .subTitulo {
     font-size: 2rem;
     margin-top: 50px;
-    text-align: left;
-    padding-left: 30px; }
+    text-align: center; }
   .formulario h5 {
     font-size: 2rem; }
   .formulario h6 {

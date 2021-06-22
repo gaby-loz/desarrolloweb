@@ -622,6 +622,8 @@ body {
         padding: 20px 40px; } }
 
 @media screen and (max-width: 480px) {
+  .navPropio {
+    padding: 0px; }
   .logo {
     width: 150px; }
   .heroInicio, .heroInicio--sobreMi, .heroInicio--seminario, .heroInicio--emergente, .heroInicio--contacto, .heroInicio--diferencia, .heroInicio--diferenciaSexual {

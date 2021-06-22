@@ -794,8 +794,11 @@ body {
     .heroInicio--sobreMi {
         background-image: url("../css/img/filosofo-daniel-sicerone-investigador-movil-.jpg");
         background-position: center;
-        padding-left: 30px;
+        padding-left: 10px;
         padding-top: 50px;
+        p{
+            max-width: 350px;
+        }
 
     }
 

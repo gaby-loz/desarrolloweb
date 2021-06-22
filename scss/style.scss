@@ -769,9 +769,10 @@ body {
         flex-flow: column wrap;
         justify-content: space-around;
         background-image: url("../css/img/buhoo-movil-2.jpg");
+        background-attachment:none;
         height: 80vh;  
         p{
-            max-width: 400px;
+            max-width: 300px;
         }
         h1{
             font-size: 2rem;

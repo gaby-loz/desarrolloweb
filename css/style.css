@@ -622,14 +622,17 @@ body {
         padding: 20px 40px; } }
 
 @media screen and (max-width: 480px) {
+  .logo {
+    width: 150px; }
   .heroInicio, .heroInicio--sobreMi, .heroInicio--seminario, .heroInicio--emergente, .heroInicio--contacto, .heroInicio--diferencia, .heroInicio--diferenciaSexual {
     flex-flow: column wrap;
     justify-content: space-around;
     background-image: url("../css/img/buhoo-movil-2.jpg");
-    background-attachment: none;
+    background-attachment: local;
+    padding-left: 10px;
     height: 80vh; }
     .heroInicio p, .heroInicio--sobreMi p, .heroInicio--seminario p, .heroInicio--emergente p, .heroInicio--contacto p, .heroInicio--diferencia p, .heroInicio--diferenciaSexual p {
-      max-width: 300px; }
+      max-width: 320px; }
     .heroInicio h1, .heroInicio--sobreMi h1, .heroInicio--seminario h1, .heroInicio--emergente h1, .heroInicio--contacto h1, .heroInicio--diferencia h1, .heroInicio--diferenciaSexual h1 {
       font-size: 2rem;
       font-weight: bold;
@@ -639,7 +642,7 @@ body {
     background-image: url("../css/img/filosofo-daniel-sicerone-investigador-movil-.jpg");
     background-position: center;
     padding-left: 30px;
-    padding-top: 120px; }
+    padding-top: 50px; }
   .cursos {
     padding: 30px;
     padding-bottom: 50px;

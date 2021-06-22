@@ -765,14 +765,18 @@ body {
 }
 
 @media screen and (max-width:480px){
+    .logo{
+        width: 150px;
+    }
     .heroInicio {
         flex-flow: column wrap;
         justify-content: space-around;
         background-image: url("../css/img/buhoo-movil-2.jpg");
-        background-attachment:none;
+        background-attachment:local;
+        padding-left: 10px;
         height: 80vh;  
         p{
-            max-width: 300px;
+            max-width: 320px;
         }
         h1{
             font-size: 2rem;
@@ -786,7 +790,7 @@ body {
         background-image: url("../css/img/filosofo-daniel-sicerone-investigador-movil-.jpg");
         background-position: center;
         padding-left: 30px;
-        padding-top: 120px;
+        padding-top: 50px;
 
     }
 

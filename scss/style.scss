@@ -398,7 +398,7 @@ body {
     border-right: solid 1px gray;
     div{
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         h3{
             font-size: 1.5rem; 
             padding-bottom: 20px;
@@ -416,6 +416,11 @@ body {
         font-size: 1rem;
         padding-top: 20px;
         padding-bottom: 20px;    
+    }
+    p{
+        font-size: 0.8rem;
+        color:$fondo;
+
     }
     ol{
         font-size: 0.8rem;
@@ -604,6 +609,13 @@ body {
 
     }
 
+    .heroInicio--seminario {
+        background-image: url("../css/img/curso-online-filosofia-tablet.jpg");
+        p{
+            width: 500px;
+        }
+    }
+
     .contenedor__areaCajas{
         display: flex;
         flex-flow: row wrap;
@@ -771,6 +783,52 @@ body {
         }
     }
 
+    #cursoContenido{
+        padding-bottom: 20px;
+        padding-right: 0px;
+        margin-right: 0px;
+        border-right: solid 0px gray;
+        width: auto;
+        div{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            h3{
+                font-size: 1.5rem; 
+                padding-bottom: 20px;
+            }
+            
+            p{
+                color: $fondo;
+                font-size: 18px;
+            }
+        }
+    }
+
+    #sidebarCurso {
+        padding: 20px 20px 20px 10px;
+        border-top: solid 1px gray;
+        height: auto;
+        h3{
+            font-size: 1rem;
+            padding-top: 20px;
+            padding-bottom: 20px;    
+        }
+        ol{
+            font-size: 1rem;
+            font-family:'Poppins', sans-serif;
+            text-decoration: none;
+        }
+    }
+
+    .parrafoUnico {
+        padding: 10px 10px;
+        h2{
+            padding: 10px;
+            font-size: 2rem;
+    
+        }
+    }
+
 }
 
 @media screen and (max-width:480px){
@@ -806,6 +864,17 @@ body {
             max-width: 350px;
         }
 
+    }
+
+    .heroInicio--seminario {
+        background-image: url("../css/img/curso-online-filosofia-movil.jpg");
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px;
+        margin: 0;
+        p{
+            max-width: 350px;
+        }
     }
 
     .cursos {
@@ -882,6 +951,26 @@ body {
         }
         h6{
             font-size: 1.2rem;
+        }
+    }
+    
+    #newsletterSemi{
+        padding: 30px 30px;
+        margin:40px ;
+        h4{
+            font-size: 1.8rem;
+        }
+        p{
+            padding-top: 10px;
+            font-size: 1.1rem;
+        }
+        form{
+            input{
+                font-size: 14px;
+                padding:10px 10px;
+                margin-bottom: 5px;
+            }
+    
         }
     }
     

@@ -50,6 +50,23 @@
 .sidebarBlog {
   grid-area: sidebarBlog; }
 
+@media screen and (max-width: 800px) {
+  #grillaSeminario {
+    display: block;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px; } }
+
+@media screen and (max-width: 480px) {
+  #grillaSeminario {
+    display: block;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    width: 100%; } }
+
 html {
   scroll-behavior: smooth; }
 
@@ -362,7 +379,7 @@ body {
   border-right: solid 1px gray; }
   #cursoContenido div {
     padding-top: 20px;
-    padding-bottom: 20px; }
+    padding-bottom: 10px; }
     #cursoContenido div h3 {
       font-size: 1.5rem;
       padding-bottom: 20px; }
@@ -375,6 +392,9 @@ body {
     font-size: 1rem;
     padding-top: 20px;
     padding-bottom: 20px; }
+  #sidebarCurso p, .sidebarFilosofo p {
+    font-size: 0.8rem;
+    color: black; }
   #sidebarCurso ol, .sidebarFilosofo ol {
     font-size: 0.8rem;
     font-family: 'Poppins', sans-serif;
@@ -500,6 +520,10 @@ body {
     background-image: url("../css/img/filosofo-daniel-sicerone-investigador-tablet.jpg");
     background-position: center;
     padding-left: 80px; }
+  .heroInicio--seminario {
+    background-image: url("../css/img/curso-online-filosofia-tablet.jpg"); }
+    .heroInicio--seminario p {
+      width: 500px; }
   .contenedor__areaCajas, body header a {
     display: flex;
     flex-flow: row wrap;
@@ -626,7 +650,39 @@ body {
       .cursos div a:hover {
         color: white;
         background-color: #ee790c;
-        padding: 20px 40px; } }
+        padding: 20px 40px; }
+  #cursoContenido {
+    padding-bottom: 20px;
+    padding-right: 0px;
+    margin-right: 0px;
+    border-right: solid 0px gray;
+    width: auto; }
+    #cursoContenido div {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      #cursoContenido div h3 {
+        font-size: 1.5rem;
+        padding-bottom: 20px; }
+      #cursoContenido div p {
+        color: black;
+        font-size: 18px; }
+  #sidebarCurso, .sidebarFilosofo {
+    padding: 20px 20px 20px 10px;
+    border-top: solid 1px gray;
+    height: auto; }
+    #sidebarCurso h3, .sidebarFilosofo h3 {
+      font-size: 1rem;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    #sidebarCurso ol, .sidebarFilosofo ol {
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none; }
+  .parrafoUnico {
+    padding: 10px 10px; }
+    .parrafoUnico h2 {
+      padding: 10px;
+      font-size: 2rem; } }
 
 @media screen and (max-width: 480px) {
   .logo {
@@ -652,6 +708,14 @@ body {
     padding-right: 10px;
     padding-top: 50px; }
     .heroInicio--sobreMi p {
+      max-width: 350px; }
+  .heroInicio--seminario {
+    background-image: url("../css/img/curso-online-filosofia-movil.jpg");
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    margin: 0; }
+    .heroInicio--seminario p {
       max-width: 350px; }
   .cursos {
     padding: 30px;
@@ -700,4 +764,16 @@ body {
   .formulario h5 {
     font-size: 2rem; }
   .formulario h6 {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  #newsletterSemi {
+    padding: 30px 30px;
+    margin: 40px; }
+    #newsletterSemi h4 {
+      font-size: 1.8rem; }
+    #newsletterSemi p {
+      padding-top: 10px;
+      font-size: 1.1rem; }
+    #newsletterSemi form input {
+      font-size: 14px;
+      padding: 10px 10px;
+      margin-bottom: 5px; } }

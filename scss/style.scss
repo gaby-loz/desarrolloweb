@@ -137,6 +137,18 @@ body {
     background-position: center;
 }
 
+.heroInicio--preciadoGucci {
+    @extend .heroInicio;
+    background-image: url("../css/img/filosofia-libros-portada.jpg");
+    background-position: center;
+}
+
+.heroInicio--queer {
+    @extend .heroInicio;
+    background-image: url("../css/img/webinar-Žiẑek-Zupančič-Copjec.jpg");
+    background-position: center;
+}
+
 .contenedor {
     display: flex;
     flex-flow: row nowrap;
@@ -355,9 +367,14 @@ body {
     text-align: center;
     padding: 50px 50px;
     h2{
-        padding: 50px;
-        font-size: 3rem;
+        padding: 20px;
+        font-size: 2rem;
 
+    }
+    h3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
     }
 }
 
@@ -536,6 +553,9 @@ body {
     @extend #sidebarCurso ;
     border-left: solid 1px gray;
     padding-left: 20px;
+    h5{
+        font-size: 1.2rem;
+    }
     p{
         color: black;
         padding-bottom: 30px;
@@ -543,12 +563,22 @@ body {
     ul{
         font-size: 1rem;
         font-family:'Poppins', sans-serif;
+        padding: 0;
+        margin: 0;
         li {
             list-style: none;
             text-align: left;
+            padding-bottom: 20px;
             a{
                 text-decoration: none;
-            }          
+                color:black;
+                font-size: 0.8rem;
+                font-weight: bold;
+            }  
+            a:hover{
+                color:gray;
+                text-decoration:underline;
+            }        
         }    
     }
 }
@@ -567,8 +597,12 @@ body {
     }
 
     ul{
+        padding: 0;
+        padding-left: 10px;
+        margin: 0;
         text-align: left;
         li{
+            padding-bottom: 10px;
             list-style: none;
             a{
                 text-decoration: none;
@@ -582,9 +616,38 @@ body {
             }
         }
     }
-    
+}
 
+.tituloBlog{
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+}
 
+.cuerpoBlog{
+    padding-bottom: 50px;
+    height: auto;
+    padding-right: 20px;
+    div{
+        h3{
+            margin-top: 50px;
+        }
+        a{
+            margin-top: 50px;
+        }
+    }
+}
+
+.linkBlog{
+    margin-bottom: 20px;
+    a{
+        color:white;
+        text-decoration: none;
+    }
+    a:hover{
+        color:$amarillo;
+    }
 }
 
 @media screen and (max-width:800px)
@@ -593,7 +656,7 @@ body {
         flex-flow: row wrap;
         justify-content:flex-start;
         background-image: url("../css/img/buhoo-tablet.jpg");;
-        background-position:left;
+        background-position:center;
         height: 80vh; 
        
         p{
@@ -614,6 +677,39 @@ body {
         p{
             width: 500px;
         }
+    }
+
+    .heroInicio--emergente{
+        background-image: url("../css/img/filosofia-hoy-tablet.jpg");
+        height: 80vh; 
+        p{
+            width: 500px;
+        }
+    }
+
+    .heroInicio--diferenciaSexual {
+        background-image: url("../css/img/mujer-filosofía-tablet.jpg");
+        background-position: center;
+    }
+
+    .heroInicio--diferencia{
+        background-image: url("../css/img/acropolis-griega-tablet.jpg");
+        background-position: center;
+    }
+
+    .heroInicio--preciadoGucci {
+        background-image: url("../css/img/filosofia-libros-portada-tablet.jpg");
+        background-position: center;
+    }
+
+    .heroInicio--queer {
+        background-image: url("../css/img/webinar-Žiẑek-Zupančič-Copjec-tablet.jpg");
+        background-position: center;
+    }
+
+    .heroInicio--contacto{
+        background-image: url("../css/img/fondo-escritorio-negro-tablet.jpg");
+        background-position: center;
     }
 
     .contenedor__areaCajas{
@@ -829,6 +925,34 @@ body {
         }
     }
 
+    .video{
+        iframe{
+            width: 700px;
+            height: 400px;
+        }
+    }
+
+    .sidebarFilosofo{
+        border-left: solid 0px gray;
+    }
+
+    .sidebarBlog{
+        margin-top: 30px;
+    }
+
+    .cuerpoBlog{
+        margin-top: 50px;
+        div{
+            h3{
+                margin-top: 50px;
+            }
+        }
+        a{
+            margin-top: 50px;
+        }
+    }
+        
+
 }
 
 @media screen and (max-width:480px){
@@ -875,6 +999,36 @@ body {
         p{
             max-width: 350px;
         }
+    }
+
+    .heroInicio--emergente{
+        background-image: url("../css/img/filosofia-hoy-movil.jpg");
+        background-position: center;
+    }
+
+    .heroInicio--diferenciaSexual {
+        background-image: url("../css/img/mujer-filosofía-movil.jpg");
+        background-position: center;
+    }
+
+    .heroInicio--diferencia{
+        background-image: url("../css/img/acropolis-griega-movil.jpg");
+        background-position: center;
+    }
+
+    .heroInicio--preciadoGucci {
+        background-image: url("../css/img/filosofia-libros-portada-movil.jpg");
+        background-position: center;
+    }
+
+    .heroInicio--queer {
+        background-image: url("../css/img/webinar-Žiẑek-Zupančič-Copjec-movil.jpg");
+        background-position: center;
+    }
+
+    .heroInicio--contacto{
+        background-image: url("../css/img/fondo-escritorio-negro-movil.jpg");
+        background-position: center;
     }
 
     .cursos {
@@ -973,7 +1127,62 @@ body {
     
         }
     }
+
+    .parrafoUnico {
+        h2{
+            padding: 10px;
+            font-size: 1.5rem;
     
+        }
+        h3{
+            margin-top: 70px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+    }
+    
+    .presenFilosofo{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        div{
+            
+            h3{
+                font-size: 1.5rem; 
+                padding-bottom: 20px;
+            }
+            h4{
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+            
+            p{
+                color: black;
+            }
+        }
+    }
+    .video{
+        iframe{
+            width: 300px;
+            height: 250px;
+        }
+    }
+    .videoEntrevista{
+        h3{
+                font-size: 1.2rem;
+        }
+    }
+    
+    .cuerpoBlog{
+        margin-top: 50px;
+        padding-right: 10px;
+        div{
+           p{
+               font-size: 0.8rem;
+           }
+        }
+    }
 
 }
     

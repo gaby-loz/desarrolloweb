@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@100;200;400&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!--encabezado-->
@@ -28,7 +29,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="sobre-mi.html">Sobre mi</a>
@@ -42,7 +43,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="filosofia-emergente.html">Filosofía Emergente</a>
+                                        <a class="nav-link active"  href="filosofia-emergente.html">Filosofía Emergente</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="contacto.html">Contacto</a>
@@ -60,139 +61,99 @@
     <!--banner de Filosofia emergente-->
     <section class="heroInicio heroInicio--emergente">
         <div>
-            <h1>
+            <h1 data-aos="slide-down" data-aos-offset="200">
                 Filosofía Emergente
             </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque iste commodi facilis architecto animi blanditiis quidem laudantium sint quis enim, est, magnam dolores ipsa quos ducimus impedit dignissimos. Quasi aut magni quam. Corporis ratione dignissimos harum beatae velit. Voluptatibus ut corrupti similique, architecto facilis quis omnis fuga optio incidunt aperiam ipsum inventore quidem sed magnam quo iure placeat eum.</p>
+            <p>Este espacio esta dedicado a la divulgación de las investigaciones y posturas de filósofos emergentes. Aquí reconocemos el trabajo individual de filósofos y filósofas que día a día avanzan sobre los debates filosóficos actuales.</p>
         
         </div>
     </section>
     
     <section class="parrafoUnico">
-        <h2>Un espacio para abordar las y los filosofos emergentes</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 data-aos="slide-down" data-aos-offset="200" data-aos-duration="2000">Un espacio para abordar las y los filósofos emergentes</h2>
+        <p>En filosofía crepuscular queremos ofrecer la oportunidad a todo filósofo y filósofa que quiera exponer los detalles de su investigación; queremos brindar un espacio en el que podamos debatir ampliamente sin temor a ser censurado o maltratado por pensar diferente.</p>
+        <p>Filosofía emergente apuesta por la emergencia de ideas y reflexiones críticas, por lo cual te invitamos a participar con tus opiniones y/o publicaciones en esta sección, la idea es construir colectivamente este espacio y apropiarnos en conjunto de sus posibilidades. Para participar escríbenos a <a href="mailto:info@filosofiacrepuscular.com">emergente@filosofiacrepuscular.com</a></p>
     </section>
+    <div>
+        <h3 class="tituloBlog" data-aos="slide-down" data-aos-offset="200" data-aos-duration="2000">últimas publicaciones del blog</h3>
+    </div>
 
     <!--cards del blog-->
     <section class="container">
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-              <div class="card card--propio">
+              <div class="card card--propio" data-aos="fade-in" data-aos-offset="200" data-aos-duration="2000">
                 <img src="css/img/acropolis-griega.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Diferencia Sexual y ontología: Debates contemporáneos</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="diferencia-sexual.html" class="botonContraste">Leer más</a>
+                  <h5 class="card-title">Introducción a los nuevos realismos</h5>
+                  <p class="card-text">Slavoj Žižek tiene como fuente principal de su filosofía dos vertientes del pensamiento europeo. Por un lado, el idealismo alemán como fuente inconfundible de su filosofía sobre el sujeto...</p>
+                  <a href="Introducción-a-los-nuevos-realismos.html" class="botonContraste">Leer más</a>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card card--propio">
+              <div class="card card--propio" data-aos="fade-in" data-aos-offset="200" data-aos-duration="2000">
                 <img src="css/img/mujer-filosofía-portada.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Diferencia Hegeliana o Diferencia Queer</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">En la primera década del presente milenio se realizó un coloquio en la ciudad de Londres, encuentro que puede emularse como el origen formal de un movimiento filosófico que...</p>
                   <a href="diferencia-hegeliana.html" class="botonContraste">Leer más</a>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card card--propio">
+              <div class="card card--propio" data-aos="fade-in" data-aos-offset="200" data-aos-duration="2000">
                 <img src="css/img/filosofia-libros-portada.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Crítica de la Razón Progresista</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="botonContraste">Leer más</a>
+                  <h5 class="card-title">Preciado y Gucci: La contradicción n´existe pas.</h5>
+                  <p class="card-text">En las últimas semanas ha aparecido la noticia de que el filósofo transexual Paul B. Preciado participa de una campaña publicitaria denominada At home de Gucci, en la cual se invita a varias personalidades para que reflexionen acerca de la diversidad corporal y las disidencias sexuales...</p>
+                  <a href="preciado-y-gucci.html" class="botonContraste">Leer más</a>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card card--propio">
+              <div class="card card--propio" data-aos="fade-in" data-aos-offset="200" data-aos-duration="2000">
                 <img src="css/img/filosofos-escuela-liubliana.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Bases de la Escuela de Liubliana</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a href="#" class="botonContraste">Leer más</a>
+                  <h5 class="card-title">A propósito de lo Queer: Desvaríos metafísicos</h5>
+                  <p class="card-text">El presente trabajo está pensado como el inicio de una serie de elaboraciones teóricas que intentarán poner en tensión el concepto Queer con las discusiones contemporáneas acerca del sentido de la diversidad sexual...</p>
+                  <a href="a-propósito-de-lo-queer.html" class="botonContraste">Leer más</a>
                 </div>
               </div>
             </div>
           </div>
 
     </section>
-
-    <!--carrusel de imágenes-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img  src="css/img/filosofo-daniel-sicerone-investigador-portada.jpg" class="d-block w-100" alt="daniel-sicerone" >
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="tituloSlide">Conózcamonos mejor</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, soluta mollitia. Dignissimos porro quod architecto non quasi nostrum enim magni.</p>
-                    <a href="sobre-mi.html" class="boton">Saber más</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="css/img/mujer-filosofía-portada.jpg" class="d-block w-100" alt="mujer-feminismo-filosofia">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3 class="tituloSlide">La teoría Queer</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos veniam earum numquam dolores incidunt? Sint eligendi amet iusto corporis totam esse error ipsa atque, ipsum hic illum sequi, voluptates incidunt?.</p>
-                    <a href="#" class="boton">Saber más</a>
-                </div>
-            </div>
-      <div class="carousel-item">
-        <img src="css/img/filosofia-hoy-portada.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h3 class="tituloSlide">Entrevistas con Filósofos Emergentes</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maiores consequatur id perferendis quia alias quasi, voluptas, repellat repudiandae totam nobis ullam nostrum maxime molestiae voluptate possimus autem, neque deserunt.</p>
-          <a href="#" class="boton">Saber más</a>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
   
   <!--grilla de entrevista al filosofo del mes-->
   <hr> <!--linea-->
     <section id="grillaFilosofoMes">
-        <div class="presenFilosofo">
+        <div class="presenFilosofo" data-aos="fade-in" data-aos-offset="200" data-aos-duration="2000">
             <div>
                 <h3>Filósofa del mes</h2>
                 <h4>María Binetti</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Su carrera de investigación se ha focalizado en la filosofía continental contemporánea interpretada en continuidad con el idealismo alemán. En la actualidad, su tarea de investigación se desarrolla en torno a una filosofía feminista de la diferencia sexual, matricial y material, conceptualizada en el marco del giro realista y especulativo del siglo XXI.</p>
             </div>
         </div>
 
         <div class="videoEntrevista">
-            <h3 class="tituloDestacadoCentrado">Entrevista con María Binetti</h3>
+            <h3>Entrevista con María Binetti</h3>
              <!--video-->
             <div class="video">
                 <iframe width="760" height="400" src="https://www.youtube.com/embed/H5ciDBUiNPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
-        <div class="sidebarFilosofo">
-            <h5>Información personal</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis vitae soluta ab necessitatibus nisi, porro explicabo, aliquam obcaecati labore debitis tempora odio harum. Delectus corporis sint sequi repellendus porro maiores.</p>
+        <div class="sidebarFilosofo" data-aos="fade-in" data-aos-offset="200" data-aos-duration="2000">
+            <h5>Información académica</h5>
+            <p>Doctora en Filosofía por la Universidad de Navarra, especialista en estudios de las mujeres y de género por la Universidad de Luján (2013) e investigadora adjunta del IIEGE-CONICET.</p>
             <h5>Últimas publicaciones</h5>
             <ul>
-                <li><a href="#">Publicación 1</a></li>
-                <li><a href="#">Publicación 2</a></li>
-                <li><a href="#">Publicación 3</a></li>
-                <li><a href="#">Publicación 4</a></li>
-                <li><a href="#">Publicación 5</a></li>
+                <li><a target="blank" href="https://dialnet.unirioja.es/servlet/articulo?codigo=7877259">Del género a los bio/cis/trans/tecno/post-géneros</a></li>
+                <li><a target="blank" href="https://revistas.ucm.es/index.php/RESF/article/view/65350">De la oscura potencia de lo femenino en el pensamiento de F. Schelling</a></li>
+                <li><a target="blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwifysHhw7XxAhUepZUCHXUfCWgQFjAAegQIBRAD&url=https%3A%2F%2Fperiodicos.unb.br%2Findex.php%2Fdasquestoes%2Farticle%2Fdownload%2F36721%2F29411%2F101465&usg=AOvVaw2BQ_OQHBqnrnR_8eKdLYom">La diferencia sexual frente al ne(cr)oliberalismo del goce</a></li>
+                <li><a target="blank" href="https://www.semanticscholar.org/paper/On-the-Ontological-Concept-of-%E2%80%9CSexual-Difference%E2%80%9D%3A-Binetti/42a296b1c35fc77972a4fc7c8848797f2a35f6b1">On the Ontological Concept of “Sexual Difference”: A Material, Dynamic, and Synthetic Approach</a></li>
+                <li><a target="blank" href="https://publicaciones.uap.edu.ar/index.php/revistaenfoques/article/view/962">La contra-acción de lo divino o sobre lo posible en Schelling y Kierkegaard</a></li>
             </ul>
         </div>
     </section>
@@ -201,14 +162,14 @@
     <!--promoción del curso del mes-->
     <section class="cursos">
         <div>
-            <h4>CURSO DEL MES</h4>
+            <h4 data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="500">CURSO DEL MES</h4>
             <hr>
-            <h3>"La Escuela de Luibliana y la Diferencia Sexual"</h2>
-            <h4>En torno a Žiẑek, Zupančič y Copjec</h3>
-            <p>Este curso tiene como propósito introducir a los participantes en el tratamiento que la Escuela de Liubliana le otorga a la diferencia sexual, especialmente a partir de la mediación entre los conceptos psicoanalíticos de la sexualidad y una particular filosofía centrada en la recuperación del pensamiento del idealismo alemán.</p>
+            <h3 data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="500">"La Escuela de Luibliana y la Diferencia Sexual"</h2>
+            <h4 data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="500">En torno a Žiẑek, Zupančič y Copjec</h3>
+            <p data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="500">Este curso tiene como propósito introducir a los participantes en el tratamiento que la Escuela de Liubliana le otorga a la diferencia sexual, especialmente a partir de la mediación entre los conceptos psicoanalíticos de la sexualidad y una particular filosofía centrada en la recuperación del pensamiento del idealismo alemán.</p>
         </div>
 
-        <div class="contenedor__cuadros">
+        <div class="contenedor__cuadros" data-aos="fade-in" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1000">
             <div>
                 <h3>Inicio</h3>
                 <p>15/10/2021</p>
@@ -235,9 +196,9 @@
         </div>
 
         <div class="curso__newsletter" >
-            <h5>Optén 25% de descuesto en todos los cursos</h2>
-            <p><span>Suscríbete a la Newsletter</span> para disfrutar de beneficios y contenido actualizado en el ámbito académico</p>
-            <form>
+            <h5 data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="300">Optén 25% de descuesto en cursos</h2>
+            <p data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="300"><span>Suscríbete a la Newsletter</span> para disfrutar de beneficios y contenido actualizado en el ámbito académico</p>
+            <form data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="300">
                 <input type="text" name="nombre" placeholder="Nombre" class="form-label"><br>
                 <input type="email" name="email" placeholder="Email" class="form-label"><br>
                 <input class="botonForm" type="submit" value="Enviar">
@@ -246,7 +207,7 @@
     </section>
 
     <!--footer-->
-    <footer class="formulario">
+    <footer class="formulario" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
         <div>
             <hr>
             <h5>¿Tienes dudas?</h5>
@@ -266,6 +227,9 @@
      </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>  
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

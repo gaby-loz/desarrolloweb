@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@100;200;400&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!--encabezado-->
@@ -28,7 +29,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="sobre-mi.html">Sobre mi</a>
@@ -37,8 +38,8 @@
                                         <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Seminario de Filosofía
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                           <li><a class="dropdown-item" href="seminario-de-filosofia.html">Seminario del mes</a></li>
+                                        <ul class="dropdown-menu" class="nav-link active" aria-labelledby="navbarDropdown">
+                                           <li><a class="dropdown-item" class="nav-link active" href="seminario-de-filosofia.html">Seminario del mes</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
@@ -61,7 +62,7 @@
     <!--banner de sobre mi-->
     <section class="heroInicio heroInicio--seminario">
         <div>
-            <h1>
+            <h1 data-aos="slide-down" data-aos-offset="200">
                 Seminario de Filosofía
             </h1>
             <p>Bimensualmente traemos una nueva propuesta de Semaninario de Filosofía con el objetivo de mantener regularmente un programa de formación contínua en el área. Los debates actuales del quehacer filosófico marcan la agenda de nuestros seminarios</p>
@@ -72,7 +73,7 @@
     
     <!--presentación seminario-->
     <section class="parrafoUnico">
-        <h2>Formación Contínua 100% Online</h2>
+        <h2 data-aos="slide-down" data-aos-offset="200" data-aos-duration="2000">Formación Contínua 100% Online</h2>
         <p>Los seminarios de Filosofía Crepuescular son programas de corta duración, desde cuatro hasta doce semanas o sesiones, que pueden ser introductorios a temas, autores o conceptos, o que se plantean un diálogo en torno a la construcción y/o desconstrucción de ciertas nociones, formas y horizontes.</p>
         <p>Para los tutores y estudiantes este es el espacio para hacer converger lo más singular de sus inquietudes y reflexiones, tanto en la experiencia escritural que la máquina de escribir posibilita como en el intercambio de las actividades presenciales.</p>
     </section>
@@ -81,14 +82,14 @@
     <!--característica del seminario del mes-->
     
     <div class="parrafoUnico">
-        <p>Seminario del mes</p>
-        <h3>"La Escuela de Luibliana y la Diferencia Sexual"</h3>
+        <h2 data-aos="slide-down" data-aos-offset="200" data-aos-duration="2000">Seminario del mes</h2>
+        <h3 data-aos="slide-down" data-aos-offset="200" data-aos-duration="2000">"La Escuela de Luibliana y la Diferencia Sexual"</h3>
         <p>En torno a Žiẑek, Zupančič y Copjec</p>
     </div>
 
     <section class="contenedor">
         
-        <div class="contenedor__meritos">
+        <div class="contenedor__meritos" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
             <div>
                 <h3>Fecha de Inicio</h3>
                 <p>15/10/2021</p>
@@ -115,7 +116,7 @@
     <!--sección de contenido-->
     
     <section id="grillaSeminario">
-        <div id="cursoContenido">
+        <div id="cursoContenido" data-aos="fade-in" data-aos-offset="200" data-aos-duration="2000">
             <div>
                 <h3>Objetivo general del curso</h3>
                 <p>Este curso tiene como propósito introducir a los participantes en el tratamiento que la Escuela de Liubliana le otorga a la diferencia sexual, especialmente a partir de la mediación entre los conceptos psicoanalíticos de la sexualidad y una particular filosofía centrada en la recuperación del pensamiento del idealismo alemán.</p>
@@ -140,7 +141,7 @@
         </div>
 
         <!--sección del sidebar-->
-        <div id="sidebarCurso">
+        <div id="sidebarCurso" data-aos="fade-in" data-aos-offset="200" data-aos-duration="2000">
             <h3>Unidad 1: La Escuela de Liubliana</h3>
             <ol>
                 <!--lista ordenada-->
@@ -175,7 +176,7 @@
         </div>        
     </section>
 
-    <section id="newsletterSemi">
+    <section id="newsletterSemi" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
         <div>
             <h4>Optén 25% de descuesto en todos los cursos</h>
             <p><span>Suscríbete a la Newsletter</span> para disfrutar de beneficios y contenido actualizado en el ámbito académico</p>
@@ -188,7 +189,7 @@
     </section>
 
     <!--footer-->
-<footer class="formulario">
+<footer class="formulario" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
     <div>
         <hr>
         <h5>¿Tienes dudas?</h5>
@@ -207,7 +208,10 @@
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>

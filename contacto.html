@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@100;200;400&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
  <!--encabezado-->
@@ -25,7 +26,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="sobre-mi.html">Sobre mi</a>
@@ -42,7 +43,7 @@
                                     <a class="nav-link" href="filosofia-emergente.html">Filosofía Emergente</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                    <a class="nav-link active" href="contacto.html">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -55,20 +56,20 @@
      <!--banner de Filosofia emergente-->
      <section class="heroInicio heroInicio--contacto">
         <div>
-            <h1>
+            <h1 data-aos="slide-down" data-aos-offset="200">
                 Contáctanos
             </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque iste commodi facilis architecto animi blanditiis quidem laudantium sint quis enim, est, magnam dolores ipsa quos ducimus impedit dignissimos. Quasi aut magni quam. Corporis ratione dignissimos harum beatae velit. Voluptatibus ut corrupti similique, architecto facilis quis omnis fuga optio incidunt aperiam ipsum inventore quidem sed magnam quo iure placeat eum.</p>
+            <p>Gracias por llegar hasta aquí, cuéntanos cómo podemos ayudarte</p>
         
         </div>
     </section>
 
-    <section class="parrafoUnico">
+    <section class="parrafoUnico" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
         <h2>¿Necesitas más Información?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Si necesitas más información acerca de la oferta de seminarios y cursos, o tienes cualquier otra duda, por favor escríbenos rellenando el siguiente formulario. Te responderemos dentro de las próximas 48hs</p>
     </section>
 
-    <footer class="formulario">
+    <footer class="formulario" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">
         <form>
             <label for="nombre">Nombre y apellido</label> <br>
             <input type="text" name="nombre" placeholder=" Nombre completo" class="form-control"><br>
@@ -80,6 +81,7 @@
                 <option value="curso2">curso 2</option>
                 <option value="curso3">curso 3</option>
             </select> <br>
+            <input type="textarea" name="comentarios" class="form-control" placeholder="Deja tu mensaje">
             <input type="checkbox" name="acepta" value="1"> Aceptas nuestra <a href="#">política de privacidad </a> <br>
             <input class="botonForm" type="submit" value="Enviar">
         </form>
@@ -94,6 +96,9 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
